@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+.list-container {
+  padding: 0 20px;
+  border: 4px solid rgba(238, 107, 255, 0.377);
+  padding-bottom: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.square-list {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 12px;
+  border-radius: 10px;
+}
+.container {
+  border: 1px solid #ddd;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  /* 가장 위에 마이 투두리스트와 리액트 글자사이에 스페이스를 줌 */
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* 컨테이너안에 아이템들은 중앙으로 배치 */
+  padding: 0 20px;
+  /* 옆에 공간 패딩은 살짝줌 */
+  border-radius: 10px;
+  font-size: 20px;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.layout {
+    max-width: 1200px;
+    min-width: 800px;
+    margin: 0 auto;
   }
-  to {
-    transform: rotate(360deg);
-  }
+.form {
+background-color: rgba(221, 221, 221, 0.507);
+border-radius: 10px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 20px;
 }
+.form-label {
+  font-size: 20px;
+  font-weight: 800;
+}
+.form-input {
+  border: none;
+  border-radius: 10px;
+  height: 30px;
+  width: 150px;
+  padding: 0 12px;
+  font-size: large;
+}
+.form-button {
+  border: none;
+  background-color:rgba(0, 139, 133, 0.74);
+  border-radius: 10px;
+  height:30px;
+  width: 100px;
+  color:rgb(255, 255, 255);
+  font-style: oblique;
+  font-weight: 800;
+  box-shadow: 0px 1px 10px 2px rgb(61, 61, 61);
+  font-size: large;
+  cursor: pointer;
+}
+.form-button:hover {
+  color:rgb(255, 198, 40)
+}
+.form-input-group {
+  display: flex;
+  gap: 10px;
+}
+.todo-container {
+  width: 150px;
+  border: 3px solid rgb(255, 198, 40);
+  border-radius: 10px;
+  padding: 12px 24px 24px 24px;
+}
+.todo-button-set {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+  justify-content: space-between;
+  
+}
+.todo-button-delete {
+  border: 2px solid red;
+  border-radius: 5px;
+}
+.todo-button-edit {
+  border: 2px solid rgb(49, 207, 255);
+  border-radius: 10px;
+}
+.button {
+  cursor: pointer;
+  width:50%;
+  height: 30px;
+}
+.todo-title{
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: rgb(231, 13, 13);
+}
+/* .todo-line{
+  width: 150px;
+  height: 2px;
+  background-color: brown;
+} */
