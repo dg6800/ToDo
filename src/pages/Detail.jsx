@@ -13,7 +13,7 @@ const Detail = () => {
 
     useEffect(() => {
         dispatch(getTodoById(id));
-    }, [])
+    }, [dispatch, id])
 
     return (
     <StDetailContainer>
